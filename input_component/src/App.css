@@ -1,38 +1,135 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 .App {
-  text-align: center;
+  display : grid;
+  height : 70vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sideComponentDiv {
+  background: #FAFBFD;
+  grid-column: 1/2;
+  grid-row : 1/12;
+  border-radius: 4px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rightComponentDiv {
+  background: #FFFFFF;
+  grid-column: 2/6;
+  grid-row: 1/11;
+  display:grid;
+  grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width : 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footerComponentDiv{
+  background: #FFFFFF;
+  grid-column: 2/6;
+  grid-row: 11/12;
 }
-
-.App-link {
-  color: #61dafb;
+.textComponentDiv .Dev {
+  position: absolute;
+  width: 114px;
+  height: 20px;
+  left: 48px;
+  top: 38px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: black;
 }
+.textComponentDiv .Dev:before {
+  color: #F7542E;
+  content : "Dev";
+}
+.textComponentDiv .colors {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  position: absolute;
+  width: 62px;
+  height: 20px;
+  left: 48px;
+  top: 180px;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9E9E9E;
+}
+.textComponentDiv .typo {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  left: 48px;
+  top: 225px;
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #9E9E9E;
+}
+.textComponentDiv .spaces {
+  position: absolute;
+  width: 47px;
+  height: 20px;
+  left: 48px;
+  top: 277px;
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #9E9E9E;
+}
+.textComponentDiv .buttons {
+  position: absolute;
+  width: 53px;
+  height: 20px;
+  left: 48px;
+  top: 327px;
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #9E9E9E;
+}
+.textComponentDiv .inputs {
+  position: absolute;
+  width: 45px;
+  height: 20px;
+  left: 48px;
+  top: 375px;
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #090F31;
+}
+.textComponentDiv .grid {
+  position: absolute;
+  width: 29px;
+  height: 20px;
+  left: 48px;
+  top: 430px;
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #9E9E9E;
 }
