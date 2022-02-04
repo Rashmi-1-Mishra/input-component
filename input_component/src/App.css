@@ -13,6 +13,7 @@
   grid-column: 1/2;
   grid-row : 1/12;
   border-radius: 4px;
+  border : 2px solid black;
 }
 .rightComponentDiv {
   background: #FFFFFF;
@@ -21,11 +22,13 @@
   display:grid;
   grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width : 100%;
+  border : 2px solid black;
 }
 .footerComponentDiv{
   background: #FFFFFF;
   grid-column: 2/6;
   grid-row: 11/12;
+  border : 2px solid black;
 }
 .textComponentDiv .Dev {
   position: absolute;
@@ -132,4 +135,7 @@
   line-height: 20px;
 
   color: #9E9E9E;
+} 
+.rightComponentDiv > div {
+  padding: 10px;
 }
